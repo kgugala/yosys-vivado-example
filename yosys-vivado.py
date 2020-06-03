@@ -8,7 +8,7 @@ work_root = 'build'
 os.makedirs(work_root, exist_ok=True)
 
 synth_tool = 'yosys'
-yosys_synth_options = '-iopad -family xc7'
+yosys_synth_options = ['-iopad', '-family xc7']
 
 srcs = glob.glob("*.v", recursive=True)
 
